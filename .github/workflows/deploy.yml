@@ -36,9 +36,5 @@ jobs:
 
     - name: Deploy to ECS (Fargate)
       run: |
-        aws ecs update-service 
-          --cluster ecs-demo-cluster      # 본인 ECS 클러스터 이름으로 변경
-          --service ecs-demo-service      # 본인 ECS 서비스 이름으로 변경
-          --force-new-deployment 
-          --region ap-northeast-2
+        aws ecs update-service --cluster ecs-demo-cluster --service ecs-demo-service --force-new-deployment --region ap-northeast-2
 
