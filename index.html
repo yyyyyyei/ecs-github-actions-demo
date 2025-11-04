@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Amazon ECS Demo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: linear-gradient(135deg, #0056b3, #00a8e8);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 1.1em;
+      font-weight: normal;
+      margin-bottom: 25px;
+      color: #e8f0ff;
+    }
+    .info-box {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 25px 50px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(6px);
+    }
+    p {
+      margin-bottom: 12px;
+      line-height: 1.6em;
+      color: #f5f7fa;
+    }
+    button {
+      background-color: #ffffff;
+      color: #0056b3;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 22px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #0056b3;
+      color: #ffffff;
+    }
+    .footer {
+      position: absolute;
+      bottom: 12px;
+      font-size: 0.9em;
+      color: #dce4ef;
+    }
+  </style>
+</head>
+<body>
+  <div class="info-box">
+    <h1>Amazon ECS 웹 애플리케이션</h1>
+    <h2>이 웹 페이지는 Fargate 기반 컨테이너에서 실행 중입니다.</h2>
+    <p>AWS의 <strong>ECR</strong>에서 이미지를 가져와 <strong>ECS</strong>로 배포했습니다.</p>
+    <p>이 애플리케이션은 Docker + Nginx + ECS로 구성되어 있습니다.</p>
+    <button onclick="alert('ECS 컨테이너에서 실행 중입니다!')">확인하기</button>
+  </div>
+
+  <div class="footer">
+    © 2025 ECS Demo | Powered by AWS ECR & ECS
+  </div>
+</body>
+</html>
+
